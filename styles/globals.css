@@ -1,38 +1,85 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.App {
+  text-align: center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-* {
-  box-sizing: border-box;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-h1,
-h2,
-p,
-ul {
-  margin: 0;
+.App-link {
+  color: #61dafb;
 }
 
-ul {
-  padding: 0;
-  list-style: none;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+.btn {
+    display: block;
+    margin: auto;
+    padding: 10px 40px;
+    background-color: #F5C14B;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+    font-size: 14px;
+    margin-top: 1.5%;
+    width: 13%;
 }
+
+.input {
+  margin-top: 2%;
+  background: #f3f3f3;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 50%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+  /* margin-top: 25%; */
+  height: 6vh;
+}
+
+.output-div {
+  background-color: #E5E4E2;
+  height: 30vh;
+  width: 50vw;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: block;
+  margin: auto;
+}
+
+.output-div p {
+  padding: 10px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
